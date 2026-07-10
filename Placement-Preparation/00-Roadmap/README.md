@@ -1,1 +1,1 @@
-﻿# 00-Roadmap\n\nThis section contains preparation strategy, revision checklists, and roadmap guides for interviews and coding assessments.\n
+﻿# 00-Roadmap\n\nRoadmap, strategy, and revision materials for placement preparation.\n

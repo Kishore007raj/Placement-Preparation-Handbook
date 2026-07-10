@@ -1,1 +1,1 @@
-﻿# 22-Problem-Solutions\n\nOrganized solutions by platform and topic.\n
+﻿# 22-Problem-Solutions\n\nSolutions grouped by platform.\n

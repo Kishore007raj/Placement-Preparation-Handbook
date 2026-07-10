@@ -2,27 +2,32 @@
 
 A comprehensive, interview-focused repository for mastering data structures, algorithms, system design, operating systems, DBMS, networking, and core programming concepts.
 
+This handbook is designed to work both as a study guide and as a practical coding repository for placement preparation, competitive programming, and technical interviews.
+
 ## Why this repository exists
 
-This handbook is designed to help students and professionals prepare for:
+It helps you prepare for:
 
 - Coding interviews
 - Placement rounds
+- Online assessments
 - Competitive programming contests
-- Technical assessments
-- Resume-backed engineering interviews
+- Technical discussions and resume-based interviews
 
-It is structured like a practical textbook and a coding repository at the same time.
+The goal is simple: build a clean, reusable, and revision-friendly knowledge base that grows with you over time.
 
 ## What you will find here
 
 - Clear theory explanations
 - Interview-oriented notes
 - C++ implementation templates
-- Optimized and brute-force solutions
+- Brute-force and optimized solutions
 - Complexity analysis
 - Common mistakes and edge cases
 - Revision-friendly cheat sheets
+- Practice problems organized by topic
+- Company-wise preparation notes
+- Progress and study tracking
 
 ## Repository Structure
 
@@ -51,33 +56,34 @@ Placement-Preparation-Handbook/
 ├── 20-Templates/
 ├── 21-Debugging/
 ├── 22-Problem-Solutions/
-├── 23-Notes/
-├── 24-Resources/
-└── 25-Progress/
+├── 23-Company-Wise/
+├── 24-Notes/
+├── 25-Resources/
+└── 26-Progress/
 ```
 
-## Suggested Learning Path
+## Recommended Learning Path
 
-1. Start with fundamentals: C++ and Mathematics
-2. Build core DSA knowledge: Arrays, Strings, Linked List, Stack, Queue
-3. Learn patterns: Sliding Window, Two Pointers, Binary Search, Backtracking
-4. Study advanced topics: DP, Graphs, Trees, Heaps, Tries
-5. Prepare for interviews: OS, DBMS, CN, System Design, Aptitude
+1. Start with fundamentals: C++ and mathematics
+2. Build strong DSA foundations: arrays, strings, linked lists, stack, queue
+3. Learn recurring patterns: binary search, two pointers, sliding window, hashing
+4. Move to advanced topics: trees, graphs, DP, heaps, tries
+5. Prepare for interviews: OS, DBMS, networking, system design, aptitude
 
-## Study Method
+## How to use this repository
 
 - Read the theory first
 - Review the cheat sheet
 - Study the patterns
 - Solve problems in increasing difficulty
 - Compare brute-force and optimized solutions
-- Revise regularly
+- Revise frequently before interviews
 
-## Revision Tips
+## Revision Strategy
 
-- Revise one topic per day
-- Keep a notebook of mistakes
-- Reimplement templates from memory
+- Revise one topic at a time
+- Keep a personal log of mistakes
+- Rebuild templates from memory
 - Practice 3 to 5 problems per topic
 - Review complexity and edge cases often
 
@@ -93,7 +99,7 @@ Each topic should remain:
 
 ## Quick Start
 
-Pick a topic from the structure above and start with:
+Begin with any topic and follow this order:
 
 1. README.md
 2. Theory.md
@@ -103,4 +109,4 @@ Pick a topic from the structure above and start with:
 
 ---
 
-This repository is intended to grow into a complete, polished placement preparation handbook over time.
+This repository is intended to grow into a polished, professional placement preparation handbook over time.

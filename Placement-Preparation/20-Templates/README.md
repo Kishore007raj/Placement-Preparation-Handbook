@@ -1,1 +1,1 @@
-﻿# 20-Templates\n\nReusable templates for CP and interviews.\n
+﻿# 20-Templates\n\nReusable code templates only. No markdown files here.\n
