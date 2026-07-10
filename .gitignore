@@ -1,2 +1,1 @@
-.vscode
-basics
+﻿*.exe\n*.out\n*.o\n*.obj\n.vscode/\n*.log\n

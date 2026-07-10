@@ -1,35 +1,20 @@
-# Placement Preparation Handbook
+﻿# Placement Preparation Handbook
 
-A comprehensive, interview-focused repository for mastering data structures, algorithms, system design, operating systems, DBMS, networking, and core programming concepts.
+A long-term GitHub repository for placement preparation, revision, implementation practice, and interview readiness.
 
-This handbook is designed to work both as a study guide and as a practical coding repository for placement preparation, competitive programming, and technical interviews.
+This repository is structured to work like a practical textbook and a coding archive at the same time. It is meant to help you learn, revise, and practice consistently over months and years.
 
-## Why this repository exists
+## What this repository includes
 
-It helps you prepare for:
-
-- Coding interviews
-- Placement rounds
-- Online assessments
-- Competitive programming contests
-- Technical discussions and resume-based interviews
-
-The goal is simple: build a clean, reusable, and revision-friendly knowledge base that grows with you over time.
-
-## What you will find here
-
-- Clear theory explanations
-- Interview-oriented notes
-- C++ implementation templates
-- Brute-force and optimized solutions
-- Complexity analysis
-- Common mistakes and edge cases
-- Revision-friendly cheat sheets
-- Practice problems organized by topic
+- Structured roadmaps and preparation strategies
+- Core DSA and algorithm notes
+- C++ templates and reusable code patterns
+- Problem solutions with explanations
 - Company-wise preparation notes
-- Progress and study tracking
+- Revision sheets, notes, and resources
+- Daily and weekly progress tracking
 
-## Repository Structure
+## Repository structure
 
 ```text
 Placement-Preparation-Handbook/
@@ -62,44 +47,36 @@ Placement-Preparation-Handbook/
 └── 26-Progress/
 ```
 
-## Recommended Learning Path
+## Suggested learning path
 
 1. Start with fundamentals: C++ and mathematics
-2. Build strong DSA foundations: arrays, strings, linked lists, stack, queue
-3. Learn recurring patterns: binary search, two pointers, sliding window, hashing
+2. Build core DSA knowledge: arrays, strings, linked lists, stacks, queues
+3. Learn common patterns: binary search, two pointers, sliding window, hashing
 4. Move to advanced topics: trees, graphs, DP, heaps, tries
 5. Prepare for interviews: OS, DBMS, networking, system design, aptitude
 
-## How to use this repository
+## How to use it
 
 - Read the theory first
 - Review the cheat sheet
 - Study the patterns
 - Solve problems in increasing difficulty
 - Compare brute-force and optimized solutions
-- Revise frequently before interviews
+- Revise regularly before interviews
 
-## Revision Strategy
+## Contribution style
 
-- Revise one topic at a time
-- Keep a personal log of mistakes
-- Rebuild templates from memory
-- Practice 3 to 5 problems per topic
-- Review complexity and edge cases often
+Keep each topic:
 
-## Contribution Style
-
-Each topic should remain:
-
-- Clear
-- Consistent
+- Clear and concise
+- Consistent in structure
+- Easy to revise
 - Interview-focused
 - C++17-friendly
-- Easy to revise
 
-## Quick Start
+## Quick start
 
-Begin with any topic and follow this order:
+Pick any topic and begin with:
 
 1. README.md
 2. Theory.md
