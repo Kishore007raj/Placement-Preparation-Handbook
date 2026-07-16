@@ -1,1 +1,5 @@
 ﻿*.exe\n*.out\n*.o\n*.obj\n.vscode/\n*.log\n
+.vscode/\n*.log\n*.tmp\n*.swp\n.DS_Store\nnode_modules/\nbuild/\ndist/\ncoverage/\n.env\n
+.vscode/settings.json
+.vscode/c__cpp_properties.json
+.vscode/launch.json
