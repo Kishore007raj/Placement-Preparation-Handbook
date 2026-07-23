@@ -8,7 +8,7 @@
 
 The **Placement Preparation Handbook** is a comprehensive, long-term learning repository designed to help students and software engineers prepare for coding interviews, campus placements, competitive programming, and software engineering careers.
 
-Rather than being just another collection of notes or coding solutions, this repository is structured as a **living handbook**—combining theory, implementation, templates, interview preparation, and revision resources into one organized learning path.
+Rather than being just another collection of notes or coding solutions, this repository is structured as a **living handbook**-combining theory, implementation, templates, interview preparation, and revision resources into one organized learning path.
 
 Whether you're starting from scratch or preparing for your dream company, this repository is designed to guide you step by step.
 
@@ -244,7 +244,7 @@ For every topic:
 6. 🔄 Revise using notes and cheat sheets.
 7. 🏆 Apply the concepts in contests and interviews.
 
-The goal is to **learn**, **implement**, **practice**, and **revise**—not just memorize solutions.
+The goal is to **learn**, **implement**, **practice**, and **revise**-not just memorize solutions.
 
 ---
 
@@ -280,7 +280,7 @@ Every topic in this repository follows the same principles:
 
 # 🌟 Long-Term Vision
 
-The vision of this project is to become a **comprehensive, open-source handbook for software engineering preparation**—a place where learners can study, practice, revise, and grow throughout their careers.
+The vision of this project is to become a **comprehensive, open-source handbook for software engineering preparation**-a place where learners can study, practice, revise, and grow throughout their careers.
 
 Instead of scattered notes across multiple platforms, everything is organized into a single, structured repository that evolves alongside modern interview trends and industry best practices.
 
