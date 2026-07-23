@@ -1,4 +1,4 @@
-# Sliding Window — Practice Problems
+# Sliding Window - Practice Problems
 
 Curated list, organized by difficulty and tagged with the variation used. Solve each twice: brute force first, then optimal sliding-window solution.
 
@@ -46,5 +46,5 @@ Curated list, organized by difficulty and tagged with the variation used. Solve 
 1. **Round 1 (Recognition):** For each problem, before coding, write down which variation you think applies and why, using `Recognition.md`. Pay special attention to distinguishing "longest" vs "shortest" record-placement.
 2. **Round 2 (Brute Force):** Implement the naive O(n²)/O(n·k) solution first.
 3. **Round 3 (Optimal):** Implement the sliding window solution, timing yourself. Target: Easy ≤ 10 min, Medium ≤ 20 min, Hard ≤ 35 min.
-4. **Round 4 (Complexity Defense):** State the time/space complexity out loud and defend the amortized argument — cross-check against `Complexity_Mistakes.md`.
+4. **Round 4 (Complexity Defense):** State the time/space complexity out loud and defend the amortized argument - cross-check against `Complexity_Mistakes.md`.
 5. **Round 5 (Cold Retry):** A week later, redo 3-4 random problems from scratch without notes to confirm retention.

@@ -1,17 +1,17 @@
-# Two Pointers — Worked Examples
+# Two Pointers - Worked Examples
 
 Step-by-step reasoning for representative problems, one per variation.
 
 ---
 
-## Example 1: Two Sum II — Input Array Is Sorted (Opposite-Direction)
+## Example 1: Two Sum II - Input Array Is Sorted (Opposite-Direction)
 
 **Problem:** Given a sorted array, find two numbers that add up to a target. Return their 1-indexed positions.
 
 **Reasoning:**
 1. Brute force would check every pair → O(n²).
 2. Array is sorted → if `nums[left] + nums[right] > target`, the only way to decrease the sum is to move `right` left (since moving `left` right would increase or keep the sum, moving away from a fix). Similarly, if the sum is too small, move `left` right.
-3. This works because the array is sorted — every move is "safe" (never skips a valid answer).
+3. This works because the array is sorted - every move is "safe" (never skips a valid answer).
 
 ```cpp
 vector<int> twoSumSorted(vector<int>& nums, int target) {
@@ -25,7 +25,7 @@ vector<int> twoSumSorted(vector<int>& nums, int target) {
     return {};
 }
 ```
-**Complexity:** O(n) time, O(1) space — vs O(n²) brute force or O(n) time + O(n) space with a HashMap (viable alternative if array weren't sorted).
+**Complexity:** O(n) time, O(1) space - vs O(n²) brute force or O(n) time + O(n) space with a HashMap (viable alternative if array weren't sorted).
 
 ---
 
@@ -36,7 +36,7 @@ vector<int> twoSumSorted(vector<int>& nums, int target) {
 **Reasoning:**
 1. Brute force: check every substring for uniqueness → O(n³) (or O(n²) with a smarter check).
 2. Use a window `[left, right]`; expand `right` one character at a time.
-3. Track the last seen index of each character. If the character at `right` was seen **inside the current window** (`lastSeen[c] >= left`), jump `left` to just after that occurrence — this instantly invalidates the repeat without rescanning.
+3. Track the last seen index of each character. If the character at `right` was seen **inside the current window** (`lastSeen[c] >= left`), jump `left` to just after that occurrence - this instantly invalidates the repeat without rescanning.
 4. Track the max window size seen so far.
 
 ```cpp
@@ -70,7 +70,7 @@ int lengthOfLongestSubstring(string s) {
 **Reasoning:**
 1. Naive approach: store visited nodes in a HashSet → O(n) space.
 2. Better: use two pointers moving at different speeds. If there's no cycle, `fast` reaches `nullptr` and we return false.
-3. If there **is** a cycle, `fast` (moving 2x speed) will eventually "lap" `slow` inside the cycle and they will meet — this is a mathematical guarantee (the gap between them decreases by 1 each step once both are in the cycle).
+3. If there **is** a cycle, `fast` (moving 2x speed) will eventually "lap" `slow` inside the cycle and they will meet - this is a mathematical guarantee (the gap between them decreases by 1 each step once both are in the cycle).
 
 ```cpp
 bool hasCycle(ListNode* head) {
@@ -83,7 +83,7 @@ bool hasCycle(ListNode* head) {
     return false;
 }
 ```
-**Complexity:** O(n) time, O(1) space — a direct improvement over the O(n) space HashSet approach.
+**Complexity:** O(n) time, O(1) space - a direct improvement over the O(n) space HashSet approach.
 
 ---
 
@@ -136,7 +136,7 @@ void mergeInPlace(vector<int>& nums1, int m, vector<int>& nums2, int n) {
     }
 }
 ```
-**Complexity:** O(m + n) time, O(1) space — vs O((m+n)²) if shifting were needed from the front.
+**Complexity:** O(m + n) time, O(1) space - vs O((m+n)²) if shifting were needed from the front.
 
 ---
 
@@ -147,7 +147,7 @@ void mergeInPlace(vector<int>& nums1, int m, vector<int>& nums2, int n) {
 **Reasoning:**
 1. A generic sort would be O(n log n); counting sort (two passes) is O(n) but needs to know counts first.
 2. Dutch National Flag does it in **one pass**, O(n) time, O(1) space: `low` boundary for 0s, `high` boundary for 2s, `mid` scans and decides where to swap.
-3. Key subtlety: after swapping `mid` with `high`, do **not** advance `mid` — the newly swapped-in value at `mid` hasn't been checked yet.
+3. Key subtlety: after swapping `mid` with `high`, do **not** advance `mid` - the newly swapped-in value at `mid` hasn't been checked yet.
 
 ```cpp
 void sortColors(vector<int>& nums) {

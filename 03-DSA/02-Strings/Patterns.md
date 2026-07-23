@@ -1,4 +1,4 @@
-# 02 - Strings — Patterns
+# 02 - Strings - Patterns
 
 Format for every pattern: **Name | When to Use | Tips for Effective Use | Recognition | Detailed Template | Time and Space Considerations | Constraints and Strategies**
 
@@ -66,7 +66,7 @@ bool validPalindromeII(string s) {
 
 ### Constraints and Strategies
 - Always clarify: case sensitivity, whitespace/punctuation handling, unicode vs ASCII.
-- For "reverse words in a string" style problems, combine two-pointer in-place reversal with a second pass to reverse word order — avoid unnecessary extra string allocations when in-place is required.
+- For "reverse words in a string" style problems, combine two-pointer in-place reversal with a second pass to reverse word order - avoid unnecessary extra string allocations when in-place is required.
 
 ---
 
@@ -78,7 +78,7 @@ bool validPalindromeII(string s) {
 
 ### Tips for Effective Use
 - Maintain a frequency map/array for the current window; expand `right`, shrink `left` when the window becomes invalid (or once it becomes valid, to minimize).
-- Track a counter of "how many characters/conditions are satisfied" instead of scanning the whole map every time — keeps each step O(1) amortized.
+- Track a counter of "how many characters/conditions are satisfied" instead of scanning the whole map every time - keeps each step O(1) amortized.
 - For fixed-size windows (anagram/permutation check), compare window size directly instead of a "valid substring" condition.
 
 ### Recognition
@@ -139,19 +139,19 @@ bool checkInclusion(string s1, string s2) {
 
 ### Constraints and Strategies
 - Fixed alphabet (lowercase letters) → use `vector<int>(26)` instead of `unordered_map` for speed and simpler equality checks (`window == need`).
-- Be precise about what "valid" means — off-by-one errors around the `required` counter are the most common bug here.
+- Be precise about what "valid" means - off-by-one errors around the `required` counter are the most common bug here.
 - For case-insensitive or unicode strings, adjust array size / use a hashmap instead of a fixed 26/128 array.
 
 ---
 
-## 3. Hashing — Frequency Counting for Strings
+## 3. Hashing - Frequency Counting for Strings
 
 ### When to Use
 - Anagram checks, isomorphic strings, first unique character, character frequency comparisons.
 - Grouping strings by a signature (anagram groups, similar structure).
 
 ### Tips for Effective Use
-- Use a fixed-size array (`int count[26]` for lowercase-only) instead of `unordered_map<char,int>` — faster and avoids hashing overhead.
+- Use a fixed-size array (`int count[26]` for lowercase-only) instead of `unordered_map<char,int>` - faster and avoids hashing overhead.
 - For anagram checks between two strings, increment count for one string and decrement for the other; all zero at the end = anagram.
 - For isomorphic strings, maintain **two** maps (char→char in both directions) to ensure a true bijection.
 
@@ -209,7 +209,7 @@ bool isIsomorphic(string s, string t) {
 - Find the longest palindromic substring, or count all palindromic substrings, when input size is moderate (n ≤ ~5000).
 
 ### Tips for Effective Use
-- Every palindrome has a center — either a single character (odd length) or between two characters (even length). Try both for every index.
+- Every palindrome has a center - either a single character (odd length) or between two characters (even length). Try both for every index.
 - Expand outward from each center while characters match; track the longest found.
 - This is simpler to code than Manacher's and sufficient for O(n²) time limits.
 
@@ -255,7 +255,7 @@ int countSubstrings(string s) {
 
 ### Constraints and Strategies
 - If `n` is large (≥ 10^5) and O(n²) will TLE, switch to **Manacher's Algorithm** (pattern 5) for O(n).
-- Remember to check **both** odd-length and even-length centers — missing even-length centers is a common bug (e.g., "abba").
+- Remember to check **both** odd-length and even-length centers - missing even-length centers is a common bug (e.g., "abba").
 
 ---
 
@@ -267,7 +267,7 @@ int countSubstrings(string s) {
 ### Tips for Effective Use
 - Transform the string by inserting a separator (`#`) between every character (and at the ends) to handle odd/even palindromes uniformly.
 - Maintain an array `p[i]` = radius of palindrome centered at `i` in the transformed string, using the "center/right boundary" trick to avoid redundant expansion.
-- Rarely asked to fully implement from scratch as a fresher, but recognize it exists and know the O(n) claim — some interviews accept explaining the idea over full implementation.
+- Rarely asked to fully implement from scratch as a fresher, but recognize it exists and know the O(n) claim - some interviews accept explaining the idea over full implementation.
 
 ### Recognition
 - Keywords: "longest palindromic substring", explicit O(n) time requirement, very large input size in constraints.
@@ -300,7 +300,7 @@ string longestPalindromeManacher(string s) {
 
 ### Constraints and Strategies
 - Rarely required to hand-write in a fresher interview, but useful to mention as the optimal known approach if asked "can you do better than O(n²)?"
-- The sentinel characters (`^`, `$`) at the boundaries avoid explicit bounds-checking during expansion — don't skip them.
+- The sentinel characters (`^`, `$`) at the boundaries avoid explicit bounds-checking during expansion - don't skip them.
 
 ---
 
@@ -311,8 +311,8 @@ string longestPalindromeManacher(string s) {
 - Problems around "implement strStr()", repeated substring patterns, prefix-suffix relationships.
 
 ### Tips for Effective Use
-- Precompute the **LPS array** (Longest Proper Prefix which is also Suffix) for the pattern — this lets you skip re-comparing characters on mismatch.
-- Core idea: on mismatch at position `j` in pattern, don't restart `j` from 0 — jump to `lps[j-1]`.
+- Precompute the **LPS array** (Longest Proper Prefix which is also Suffix) for the pattern - this lets you skip re-comparing characters on mismatch.
+- Core idea: on mismatch at position `j` in pattern, don't restart `j` from 0 - jump to `lps[j-1]`.
 - The LPS array itself is useful standalone for problems like "shortest repeating substring" or "add shortest palindrome prefix".
 
 ### Recognition
@@ -361,7 +361,7 @@ vector<int> KMPSearch(const string& text, const string& pattern) {
 
 ### Constraints and Strategies
 - Preferred over brute force `substr`/nested-loop matching whenever `n` and `m` are both large (avoids O(n·m) worst case, e.g., text = "aaaa...a", pattern = "aaa...ab").
-- The LPS array logic is the hard part to get right — practice writing it from scratch; it's the most commonly mis-implemented part in interviews.
+- The LPS array logic is the hard part to get right - practice writing it from scratch; it's the most commonly mis-implemented part in interviews.
 
 ---
 
@@ -426,7 +426,7 @@ vector<string> findRepeatedDnaSequences(string s) {
 - O(1) extra space for the rolling hash (excluding output).
 
 ### Constraints and Strategies
-- Always verify a hash match with a direct string comparison — hash collisions are possible even with a good modulus (birthday paradox).
+- Always verify a hash match with a direct string comparison - hash collisions are possible even with a good modulus (birthday paradox).
 - Choose a large prime modulus and a base larger than the alphabet size to minimize collisions.
 - For very performance-critical code, consider double hashing (two different mod/base pairs) to virtually eliminate collision risk.
 
@@ -440,7 +440,7 @@ vector<string> findRepeatedDnaSequences(string s) {
 
 ### Tips for Effective Use
 - `z[i]` = length of the longest substring starting at `i` that matches a prefix of the string.
-- Build by maintaining a window `[l, r]` — the rightmost interval matching a prefix — to avoid recomputation, same spirit as Manacher's.
+- Build by maintaining a window `[l, r]` - the rightmost interval matching a prefix - to avoid recomputation, same spirit as Manacher's.
 - To find pattern `p` in text `s`: build Z-array of `p + '#' + s`; any position with `z[i] == len(p)` is a match start (adjusted for the prefix + separator length).
 
 ### Recognition
@@ -477,7 +477,7 @@ vector<int> findOccurrences(const string& text, const string& pattern) {
 
 ### Constraints and Strategies
 - Choose a separator character guaranteed **not** to appear in either string (commonly `#` or `$`).
-- Functionally similar to KMP for exact pattern matching — pick whichever you can implement correctly under pressure; KMP is more commonly expected in fresher interviews, Z-function is a good bonus to mention.
+- Functionally similar to KMP for exact pattern matching - pick whichever you can implement correctly under pressure; KMP is more commonly expected in fresher interviews, Z-function is a good bonus to mention.
 
 ---
 
@@ -488,7 +488,7 @@ vector<int> findOccurrences(const string& text, const string& pattern) {
 
 ### Tips for Effective Use
 - Each Trie node holds a fixed-size array of children (26 for lowercase) or a hashmap for larger alphabets, plus an `isEnd` flag.
-- Insertion and search are both O(L) where L = length of the word — independent of how many words are stored, unlike a hashset-of-strings approach for prefix queries.
+- Insertion and search are both O(L) where L = length of the word - independent of how many words are stored, unlike a hashset-of-strings approach for prefix queries.
 - For wildcard search (`.` matches any character), use DFS/backtracking through the Trie instead of a simple loop.
 
 ### Recognition
@@ -546,7 +546,7 @@ public:
 ### Constraints and Strategies
 - For large/sparse alphabets (unicode), use `unordered_map<char, TrieNode*>` per node instead of a fixed-size array to save memory.
 - Remember to free/manage memory in production code (not usually required in interviews, but mention it if asked about memory management).
-- Combine with DFS/backtracking for problems like Word Search II (grid + dictionary) — Trie prunes the search space significantly.
+- Combine with DFS/backtracking for problems like Word Search II (grid + dictionary) - Trie prunes the search space significantly.
 
 ---
 
@@ -620,7 +620,7 @@ void partitionHelper(string& s, int start, vector<string>& path, vector<vector<s
 - Palindrome Partitioning: O(n · 2^n) worst case time, improved with DP precomputed palindrome table to O(n²) for the check phase.
 
 ### Constraints and Strategies
-- Backtracking is inherently exponential — only viable when `n` is small (typically n ≤ 12-20 depending on branching factor). Always check constraints before assuming this pattern is intended.
+- Backtracking is inherently exponential - only viable when `n` is small (typically n ≤ 12-20 depending on branching factor). Always check constraints before assuming this pattern is intended.
 - Prune early: add constraints (like open/close balance) directly into the recursion rather than generating everything and filtering afterward.
 - Precompute expensive checks (like palindrome validity) outside/before the recursive branching when they're reused across many branches.
 

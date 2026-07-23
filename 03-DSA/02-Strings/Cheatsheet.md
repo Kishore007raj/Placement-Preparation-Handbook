@@ -1,4 +1,4 @@
-# 02 - Strings — Cheatsheet
+# 02 - Strings - Cheatsheet
 
 Quick-glance table. Full detail in `Patterns.md`.
 
@@ -53,9 +53,9 @@ stringstream ss(s);                 // for splitting by delimiter
 ```
 
 ## Common Gotchas
-- Off-by-one in sliding window `required` counter — verify with a small example ("aa", "aab") before trusting the logic.
-- Repeated `+=` string concatenation in a loop can be hidden O(n²) — use `reserve()` or build via vector<char>.
-- Fixed 26-size arrays assume lowercase-only input — check constraints before using them; switch to 128/256-size array or hashmap otherwise.
-- `substr()` copies — avoid calling it in a tight loop if it can be avoided with index-based comparison instead.
+- Off-by-one in sliding window `required` counter - verify with a small example ("aa", "aab") before trusting the logic.
+- Repeated `+=` string concatenation in a loop can be hidden O(n²) - use `reserve()` or build via vector<char>.
+- Fixed 26-size arrays assume lowercase-only input - check constraints before using them; switch to 128/256-size array or hashmap otherwise.
+- `substr()` copies - avoid calling it in a tight loop if it can be avoided with index-based comparison instead.
 - Palindrome checks: don't forget even-length centers (e.g., "abba") when using expand-around-center.
-- KMP: LPS array indices are the most common source of bugs — trace through by hand on a small pattern like "aabaaab" before using it in a live interview.
+- KMP: LPS array indices are the most common source of bugs - trace through by hand on a small pattern like "aabaaab" before using it in a live interview.

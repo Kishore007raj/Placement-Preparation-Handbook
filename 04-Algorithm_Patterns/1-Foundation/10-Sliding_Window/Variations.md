@@ -1,4 +1,4 @@
-# Sliding Window — Variations
+# Sliding Window - Variations
 
 Every distinct flavor of the Sliding Window pattern, with the core mechanic explained.
 
@@ -15,7 +15,7 @@ Every distinct flavor of the Sliding Window pattern, with the core mechanic expl
 
 ---
 
-## 2. Variable-Size Window — Longest Valid Range
+## 2. Variable-Size Window - Longest Valid Range
 **Mechanic:** `left = 0`; for each `right`, expand the window by including `nums[right]`. If the window becomes invalid, shrink from `left` in a `while` loop until valid again. Record the max window size **after** ensuring validity.
 
 **Used for:**
@@ -29,7 +29,7 @@ Every distinct flavor of the Sliding Window pattern, with the core mechanic expl
 
 ---
 
-## 3. Variable-Size Window — Shortest Valid Range
+## 3. Variable-Size Window - Shortest Valid Range
 **Mechanic:** `left = 0`; for each `right`, expand the window. Once valid, shrink from `left` **as much as possible while staying valid**, recording the minimum window size at each valid step before it becomes invalid again.
 
 **Used for:**
@@ -37,7 +37,7 @@ Every distinct flavor of the Sliding Window pattern, with the core mechanic expl
 - Minimum Size Subarray Sum (sum ≥ target)
 - Smallest subarray containing all unique elements of the array
 
-**Decision rule:** grow unconditionally; shrink greedily while still valid, recording the answer at every valid state — not just once at the end.
+**Decision rule:** grow unconditionally; shrink greedily while still valid, recording the answer at every valid state - not just once at the end.
 
 ---
 
@@ -49,7 +49,7 @@ Every distinct flavor of the Sliding Window pattern, with the core mechanic expl
 - Sliding Window Minimum
 - Shortest Subarray with Sum at Least K (using a monotonic deque on prefix sums)
 
-**Decision rule:** the front of the deque always holds the index of the current window's max/min — O(1) retrieval, O(n) total amortized work since each index is pushed and popped at most once.
+**Decision rule:** the front of the deque always holds the index of the current window's max/min - O(1) retrieval, O(n) total amortized work since each index is pushed and popped at most once.
 
 ---
 

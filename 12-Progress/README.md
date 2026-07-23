@@ -178,7 +178,7 @@ A structured progress tracker helps you:
 - Update your logs every day.
 - Review your progress at the end of each week.
 - Revise difficult topics regularly.
-- Analyze every contest—not just your rating.
+- Analyze every contest-not just your rating.
 - Revisit unsolved and challenging problems.
 - Celebrate milestones to maintain motivation.
 

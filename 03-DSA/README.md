@@ -92,11 +92,11 @@ Level 5  → Trie & Advanced Applications
 |----------------|:------:|:------:|:------:|:------:|
 | Array | O(1) | O(n) | O(n) | O(n) |
 | String | O(1) | O(n) | O(n) | O(n) |
-| Hash Table* | — | O(1) | O(1) | O(1) |
+| Hash Table* | - | O(1) | O(1) | O(1) |
 | Linked List** | O(n) | O(n) | O(1) | O(1) |
 | Stack | O(n) | O(n) | O(1) | O(1) |
 | Queue | O(n) | O(n) | O(1) | O(1) |
-| Heap | — | O(n) | O(log n) | O(log n) |
+| Heap | - | O(n) | O(log n) | O(log n) |
 | Binary Search Tree*** | O(log n) | O(log n) | O(log n) | O(log n) |
 | Graph | Depends on representation | O(V + E) | Varies | Varies |
 | Trie | O(L) | O(L) | O(L) | O(L) |

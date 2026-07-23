@@ -1,4 +1,4 @@
-﻿# Sliding Window — Complexity
+﻿# Sliding Window - Complexity
 
 ## Per-Variation Complexity
 
@@ -9,9 +9,9 @@
 | Variable-Size (Shortest) | O(n) amortized | O(1) or O(k) | O(n²) checking every subarray |
 | Monotonic Deque Window | O(n) amortized | O(k) for the deque | O(n·k) scanning every window for max/min |
 | At-Most-K Trick | O(n) (two O(n) passes) | O(k) for frequency map | O(n²) counting subarrays directly by brute force |
-| Fixed + Frequency Array (Anagram) | O(n · Σ) where Σ = alphabet size (effectively O(n)) | O(Σ) — O(1) for fixed 26-letter alphabet | O(n · k log k) sorting each window |
+| Fixed + Frequency Array (Anagram) | O(n · Σ) where Σ = alphabet size (effectively O(n)) | O(Σ) - O(1) for fixed 26-letter alphabet | O(n · k log k) sorting each window |
 
-## Why Sliding Window Achieves O(n) — The Core Argument
+## Why Sliding Window Achieves O(n) - The Core Argument
 Both `left` and `right` pointers only move **forward**, never backward. Across the entire run of the algorithm:
 - `right` advances at most `n` times (once per element).
 - `left` advances at most `n` times total, **across all iterations combined**, not per iteration of the outer loop.
@@ -32,6 +32,6 @@ For Sliding Window Maximum/Minimum: each index is pushed onto the deque exactly 
 | Situation | Sliding Window | Alternative | Trade-off |
 |---|---|---|---|
 | Longest subarray sum ≤ target, non-negative values | O(n) time, O(1) space | Prefix Sum + binary search: O(n log n) | Sliding Window wins when values are non-negative |
-| Longest subarray sum ≤ target, **negative values allowed** | Doesn't directly apply (breaks monotonicity) | Prefix Sum + sorted structure / monotonic deque on prefix sums: O(n log n) | Must switch approaches — sliding window alone is incorrect here |
+| Longest subarray sum ≤ target, **negative values allowed** | Doesn't directly apply (breaks monotonicity) | Prefix Sum + sorted structure / monotonic deque on prefix sums: O(n log n) | Must switch approaches - sliding window alone is incorrect here |
 | Max/min per window | O(n) with monotonic deque | Naive scan per window: O(n·k) | Deque wins decisively for large k |
 | Anagram/permutation matching | O(n) with frequency array | Sort each window: O(n·k log k) | Frequency array avoids repeated sorting |

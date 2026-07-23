@@ -1,4 +1,4 @@
-# 01 - Arrays & Hashing — Cheatsheet
+# 01 - Arrays & Hashing - Cheatsheet
 
 Quick-glance table. Full detail in `Patterns.md`.
 
@@ -46,7 +46,7 @@ stack<int> st; st.top(); st.pop(); st.push(x);
 
 ## Common Gotchas
 - Overflow: use `long long` for prefix sums / products when values can be large.
-- `unordered_map[key]` **auto-creates** an entry with default value if key doesn't exist — use `.count(key)` or `.find(key)` to check without inserting.
+- `unordered_map[key]` **auto-creates** an entry with default value if key doesn't exist - use `.count(key)` or `.find(key)` to check without inserting.
 - Two Sum: check complement **before** inserting current element (avoid using same index twice).
 - Kadane's: initialize `maxSum = nums[0]`, not 0 (handles all-negative arrays).
 - Sliding window (variable): only valid when shrinking monotonically fixes the violated condition; breaks with negative numbers unless adapted.

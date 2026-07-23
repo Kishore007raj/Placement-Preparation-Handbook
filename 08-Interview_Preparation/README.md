@@ -2,7 +2,7 @@
 
 Technical knowledge alone isn't enough to secure a software engineering role. Interviews evaluate your problem-solving ability, communication skills, professional presence, and overall readiness.
 
-This section covers every stage of the interview process—from building a strong resume and LinkedIn profile to technical interviews, behavioral rounds, salary negotiation, and company-specific preparation.
+This section covers every stage of the interview process-from building a strong resume and LinkedIn profile to technical interviews, behavioral rounds, salary negotiation, and company-specific preparation.
 
 ---
 
@@ -241,4 +241,4 @@ By the end of this section, you should be able to answer these questions confide
 - **Am I prepared for technical and behavioral interviews?**
 - **Can I evaluate and negotiate job offers professionally?**
 
-Mastering interview preparation gives you the skills and confidence to navigate the complete software engineering hiring process—from your first application to your final offer.
+Mastering interview preparation gives you the skills and confidence to navigate the complete software engineering hiring process-from your first application to your final offer.

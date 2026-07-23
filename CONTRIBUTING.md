@@ -1,6 +1,6 @@
 ﻿# 🤝 Contributing
 
-Thank you for your interest in contributing! Every contribution—whether it's a bug fix, improved documentation, new learning material, or optimized code—helps make this repository more valuable for the community.
+Thank you for your interest in contributing! Every contribution-whether it's a bug fix, improved documentation, new learning material, or optimized code-helps make this repository more valuable for the community.
 
 ## Ways to Contribute
 

@@ -194,7 +194,7 @@ For every pattern:
 
 1. Learn the intuition behind the technique.
 2. Understand when the pattern applies.
-3. Memorize the generic template—not individual solutions.
+3. Memorize the generic template-not individual solutions.
 4. Solve easy problems until the pattern becomes recognizable.
 5. Progress to medium and hard variations.
 6. Revisit the pattern after a few days to reinforce recognition.

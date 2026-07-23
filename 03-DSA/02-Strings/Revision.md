@@ -1,18 +1,18 @@
-# 02 - Strings — Revision (Night-Before-Interview Sheet)
+# 02 - Strings - Revision (Night-Before-Interview Sheet)
 
 Read this top-to-bottom in ~10 minutes before any OA/interview.
 
 ## One-Line Recall Per Pattern
-1. **Two Pointers** — converge `left`/`right` inward; compare and stop on first mismatch.
-2. **Sliding Window** — expand `right` always; shrink `left` based on a validity/counter condition; track best window.
-3. **Hashing (Frequency)** — `int count[26]` for lowercase-only; increment for one string, decrement for other, all-zero = match.
-4. **Expand Around Center** — try every index as both odd-length and even-length center; expand while chars match.
-5. **Manacher's Algorithm** — transform with `#` separators; radius array `p[i]` using center/right-boundary trick; O(n).
-6. **KMP** — build LPS array (longest proper prefix = suffix); on mismatch jump `j = lps[j-1]` instead of restarting.
-7. **Rabin-Karp** — rolling hash, O(1) update per shift; always verify hash match with direct string comparison.
-8. **Z-Function** — `z[i]` = match length with prefix starting at i; concatenate `pattern + '#' + text` for matching.
-9. **Trie** — tree of characters; O(L) insert/search independent of dictionary size; use for prefix-heavy problems.
-10. **Backtracking** — choose → recurse → undo; add constraints early to prune (e.g., open/close balance in parentheses).
+1. **Two Pointers** - converge `left`/`right` inward; compare and stop on first mismatch.
+2. **Sliding Window** - expand `right` always; shrink `left` based on a validity/counter condition; track best window.
+3. **Hashing (Frequency)** - `int count[26]` for lowercase-only; increment for one string, decrement for other, all-zero = match.
+4. **Expand Around Center** - try every index as both odd-length and even-length center; expand while chars match.
+5. **Manacher's Algorithm** - transform with `#` separators; radius array `p[i]` using center/right-boundary trick; O(n).
+6. **KMP** - build LPS array (longest proper prefix = suffix); on mismatch jump `j = lps[j-1]` instead of restarting.
+7. **Rabin-Karp** - rolling hash, O(1) update per shift; always verify hash match with direct string comparison.
+8. **Z-Function** - `z[i]` = match length with prefix starting at i; concatenate `pattern + '#' + text` for matching.
+9. **Trie** - tree of characters; O(L) insert/search independent of dictionary size; use for prefix-heavy problems.
+10. **Backtracking** - choose → recurse → undo; add constraints early to prune (e.g., open/close balance in parentheses).
 
 ## Formulas / Core Recurrences to Memorize
 ```
@@ -47,7 +47,7 @@ Manacher's core:         if i < right: p[i] = min(right - i, p[2*center - i])
 | | | | | |
 | | | | | |
 
-> Tip: Every time you get a problem wrong or slow, add a row above. Re-read this table before every interview — it's your personalized weak-spot list.
+> Tip: Every time you get a problem wrong or slow, add a row above. Re-read this table before every interview - it's your personalized weak-spot list.
 
 ## Final 5-Minute Sanity Check Before Submitting Code
 - [ ] Confirmed the character set (lowercase-only vs mixed vs unicode)?

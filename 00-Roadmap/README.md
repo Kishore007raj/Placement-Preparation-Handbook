@@ -79,7 +79,7 @@ Level 5  → Company Preparation & Revision Strategy
 
 # 📌 Preparation Timeline
 
-### 🌱 Phase 1 — Build Foundations
+### 🌱 Phase 1 - Build Foundations
 
 - Learn C++ (or another programming language)
 - Study Data Structures
@@ -89,7 +89,7 @@ Level 5  → Company Preparation & Revision Strategy
 
 ---
 
-### 🚀 Phase 2 — Strengthen Core Skills
+### 🚀 Phase 2 - Strengthen Core Skills
 
 - Computer Science Fundamentals
 - Advanced DSA
@@ -99,7 +99,7 @@ Level 5  → Company Preparation & Revision Strategy
 
 ---
 
-### 💼 Phase 3 — Interview Preparation
+### 💼 Phase 3 - Interview Preparation
 
 - Resume
 - LinkedIn
@@ -110,7 +110,7 @@ Level 5  → Company Preparation & Revision Strategy
 
 ---
 
-### 🎯 Phase 4 — Placement Readiness
+### 🎯 Phase 4 - Placement Readiness
 
 - Online Assessments
 - Company-Specific Practice

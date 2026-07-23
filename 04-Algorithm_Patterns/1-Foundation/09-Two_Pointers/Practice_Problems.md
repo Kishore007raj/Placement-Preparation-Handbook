@@ -1,4 +1,4 @@
-# Two Pointers — Practice Problems
+# Two Pointers - Practice Problems
 
 Curated list, organized by difficulty and tagged with the variation used. Solve each twice: brute force first, then optimal two-pointer solution.
 
@@ -12,7 +12,7 @@ Curated list, organized by difficulty and tagged with the variation used. Solve 
 | Remove Duplicates from Sorted Array | Slow/Fast Write-Read |
 | Remove Element | Slow/Fast Write-Read |
 | Merge Sorted Array (in place) | Merge Pointers |
-| Two Sum II — Input Array Is Sorted | Opposite-Direction |
+| Two Sum II - Input Array Is Sorted | Opposite-Direction |
 | Middle of the Linked List | Fast & Slow |
 | Linked List Cycle | Fast & Slow |
 | Is Subsequence | Two Arrays Non-Merge |
@@ -53,7 +53,7 @@ Curated list, organized by difficulty and tagged with the variation used. Solve 
 
 ## Practice Strategy
 1. **Round 1 (Recognition):** For each problem, before coding, write down which variation you think applies and why, using the `Recognition.md` checklist. Check yourself against the tables above.
-2. **Round 2 (Brute Force):** Implement the naive O(n²) or worse solution first — this builds the intuition for *why* the optimized version works.
+2. **Round 2 (Brute Force):** Implement the naive O(n²) or worse solution first - this builds the intuition for *why* the optimized version works.
 3. **Round 3 (Optimal):** Implement the two-pointer solution, timing yourself. Target: Easy ≤ 10 min, Medium ≤ 20 min, Hard ≤ 35 min.
-4. **Round 4 (Complexity Defense):** Out loud (or written), state the time/space complexity and defend it — cross-check against `Complexity_Mistakes.md` for common traps.
+4. **Round 4 (Complexity Defense):** Out loud (or written), state the time/space complexity and defend it - cross-check against `Complexity_Mistakes.md` for common traps.
 5. **Round 5 (Cold Retry):** A week later, redo 3-4 random problems from the list from scratch without looking at notes, to confirm retention.

@@ -1,4 +1,4 @@
-# Two Pointers — Variations
+# Two Pointers - Variations
 
 Every distinct flavor of the Two Pointers pattern, with the core mechanic explained.
 
@@ -37,11 +37,11 @@ Every distinct flavor of the Two Pointers pattern, with the core mechanic explai
 
 **Used for:**
 - Finding the middle of a linked list (`slow` lands on the middle when `fast` reaches the end)
-- Detecting a cycle in a linked list (they meet if a cycle exists — Floyd's Cycle Detection)
+- Detecting a cycle in a linked list (they meet if a cycle exists - Floyd's Cycle Detection)
 - Finding the start of a cycle (reset one pointer to head after first meeting, advance both by 1 until they meet again)
 - Finding if a number is "happy" (treat digit-square-sum sequence as an implicit linked list, detect cycle)
 
-**Decision rule:** no comparison needed — the speed differential alone produces the useful structural property.
+**Decision rule:** no comparison needed - the speed differential alone produces the useful structural property.
 
 ---
 
@@ -71,7 +71,7 @@ Every distinct flavor of the Two Pointers pattern, with the core mechanic explai
 ---
 
 ## 6. Three-Pointer Partition (Dutch National Flag)
-**Mechanic:** `low`, `mid`, `high` — `mid` scans, `low` marks the boundary for "small" elements, `high` marks the boundary for "large" elements.
+**Mechanic:** `low`, `mid`, `high` - `mid` scans, `low` marks the boundary for "small" elements, `high` marks the boundary for "large" elements.
 
 **Used for:**
 - Sort Colors (0s, 1s, 2s in one pass)
@@ -83,7 +83,7 @@ Every distinct flavor of the Two Pointers pattern, with the core mechanic explai
 ---
 
 ## 7. Two Pointers on Two Different Arrays (Non-Merge)
-**Mechanic:** similar to merge pointers, but used for comparison/matching rather than merging — e.g., checking if one string is a subsequence of another.
+**Mechanic:** similar to merge pointers, but used for comparison/matching rather than merging - e.g., checking if one string is a subsequence of another.
 
 **Used for:**
 - Is Subsequence (check if `s` is a subsequence of `t`)
