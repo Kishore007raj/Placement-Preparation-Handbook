@@ -1,2 +1,54 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# =========================
+# Normalize text files
+# =========================
+* text=auto eol=lf
+
+# =========================
+# Source Code
+# =========================
+*.cpp text
+*.cc text
+*.c text
+*.h text
+*.hpp text
+*.py text
+*.java text
+*.js text
+*.ts text
+*.html text
+*.css text
+*.json text
+*.xml text
+*.yml text
+*.yaml text
+*.md text
+*.txt text
+*.cmake text
+
+# =========================
+# Scripts
+# =========================
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# =========================
+# Binary Files
+# =========================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.7z binary
+*.tar binary
+*.gz binary
+*.rar binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
