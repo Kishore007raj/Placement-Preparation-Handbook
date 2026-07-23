@@ -2,8 +2,6 @@
 
 A focused, ace-the-interview breakdown of the **Two Pointers** pattern. Language: **C++**.
 
-Unlike the topic-wide folders (`01-Arrays`, `02-Strings`), this folder goes deep on **one pattern only** — treat it as the definitive reference for Two Pointers whenever it shows up, in any topic (arrays, strings, linked lists).
-
 ## Folder Contents
 
 | File | Purpose | Read When |
